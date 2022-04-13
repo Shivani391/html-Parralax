@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  background: rgb(red, green, blue);
+  /*  color: white; */
+}
+.img1 {
+  height: 100vh;
+  background: navy url(./assests/fog.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.hero {
+  width: 350px;
+  background: rgba(230, 228, 228, 0.685);
+  padding: 1rem;
+  border-radius: 5px;
+  color: white;
+  z-index: 10;
+  border: 3px solid rgba(255, 255, 255, 0.445);
+  backdrop-filter: blur(5px);
+}
+section {
+  width: 80%;
+  margin: auto;
+}
+.img2 {
+  background: url(./assests/natural.jpg) no-repeat center center;
+  height: 60vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  background: rgba(0, 0, 0, 0.398);
+  padding: 20px 48px;
+  color: white;
+  border-radius: 5px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+.img3 {
+  background: url(./assests/nature.jpg) no-repeat center center;
+  height: 60vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img1,
+.img2,
+.img3 {
+  background-attachment: fixed;
+}
+.round {
+  background: linear-gradient(red, yellow);
+  width: 200px;
+  height: 200px;
+  border-radius: 50% 50%;
+  position: relative;
+  top: -100px;
+  left: 50px;
+  /* z-index: 10; */
+}
+.down-arrow {
+  font-size: 3rem;
+  font-weight: bolder;
+  position: absolute;
+  bottom: 50px;
+  color: blue;
+  transform: rotate(90deg);
+  animation: go-down 1s infinite;
+}
+@keyframes go-down {
+  0% {
+    bottom: 50px;
+  }
+  50% {
+    color: aqua;
+  }
+  100% {
+    bottom: 10px;
+  }
+}
